@@ -1,0 +1,15 @@
+{
+  "name": "angular-node-website-for-promo",
+  "version": "1.0.0",
+  "description": "a showcase of work in 1:30",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cairo Stewart",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "morgan": "^1.6.1"
+  }
+}
