@@ -8,6 +8,13 @@ body {
   flex: 1 0 auto;
 }
 
+img {
+	width: 100%;
+}
+footer.page-footer {
+	margin-top: 0;
+	padding-top: 0;
+}
 /*.container {
 	margin-left: 10%;
 	margin-right: 10%;
