@@ -20,6 +20,9 @@ footer.page-footer {
 	box-sizing: all;
 }
 
+a.brand-logo {
+	font-family: 'Pinyon Script', cursive;
+}
 /*.container {
 	margin-left: 10%;
 	margin-right: 10%;
