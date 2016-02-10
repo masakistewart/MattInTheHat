@@ -15,6 +15,11 @@ footer.page-footer {
 	margin-top: 0;
 	padding-top: 0;
 }
+
+.parallax img {
+	box-sizing: all;
+}
+
 /*.container {
 	margin-left: 10%;
 	margin-right: 10%;
