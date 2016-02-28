@@ -1,113 +1,130 @@
 <!DOCTYPE html>
-<html ng-app="showcase">
+<html>
 <head>
-	<title>$ShowCase$</title>
-<link rel="stylesheet" type="text/css" href="../stylesheets/materialize.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+<title>$ShowCase$</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="../js/materialize.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js"></script>
-
-<script type="text/javascript" src="../js/app.js"></script>
-<script type="text/javascript" src="../js/controller.js"></script>
-<script type="text/javascript" src="../js/routes.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/style.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 <nav>
-<div class="nav-wrapper grey darken-4">
-	<div class="container">
-	  <a href="#" class="brand-logo orange-text">On The Rocks</a>
-	  <ul id="nav-mobile" class="right hide-on-med-and-down">
-	    <li><a class="orange-text" href="#">Contact</a></li>
-	    <li><a class="orange-text" href="#">About</a></li>
-	    <li><a class="orange-text" href="#">Tracks</a></li>
-	  </ul>
-	</div>
-</div>
-</nav>
-
-<!-- Section with Words -->
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="images/mattPic.jpg">
-    </div>
-  </div>
-  <div class="section center grey darken-4">
-    <div class="row">
-      <div class="section">
-        <h1 class="orange-text">
-          <span class="glyphicon glyphicon-fire"></span>
-          DJ COLLECTIVE
-        </h1>
-        <p class="orange-text">Login or Register With:</p>
-        <a href="#" class="btn yellow accent-2 black-text"><span class="fa fa-user"></span> Local Login</a>
-        <a href="#" class="btn yellow accent-2 black-text"><span class="fa fa-user"></span> Local Signup</a>
-        <a href="#" class="btn yellow accent-2 black-text"><span class="fa fa-facebook"></span> Facebook</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s4">
-        <i class="large material-icons orange-text">trending_up</i>
-        <h4 class="orange-text">Lorem Ipsum</h4>
-        <p class="orange-text">Kale chips forage beard flannel. Sartorial small batch marfa cray shoreditch. Artisan put a bird on it farm-to-table etsy taxidermy normcore. Biodiesel meh gentrify brooklyn, organic cornhole squid twee. Fap polaroid drinking vinegar, marfa umami mustache keytar lumbersexual. </p>
-      </div>
-      <div class="col s4">
-        <i class="large material-icons orange-text">verified_user</i>
-        <h4 class="orange-text">Lorem Ipsum</h4>
-        <p class="orange-text">Kale chips forage beard flannel. Sartorial small batch marfa cray shoreditch. Artisan put a bird on it farm-to-table etsy taxidermy normcore. Biodiesel meh gentrify brooklyn, organic cornhole squid twee. Fap polaroid drinking vinegar, marfa umami mustache keytar lumbersexual. </p>
-      </div>
-      <div class="col s4">
-        <i class="large material-icons orange-text">translate</i>
-        <h4 class="orange-text">Lorem Ipsum</h4>
-        <p class="orange-text">Kale chips forage beard flannel. Sartorial small batch marfa cray shoreditch. Artisan put a bird on it farm-to-table etsy taxidermy normcore. Biodiesel meh gentrify brooklyn, organic cornhole squid twee. Fap polaroid drinking vinegar, marfa umami mustache keytar lumbersexual.</p>
-        <h4></h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="parallax-container">
-    <div id="passiton" class="parallax">
-      <img src="/images/bottomPic.jpg">
-    </div>
-  </div>
-
-<footer class="page-footer grey darken-4">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="orange-text">Footer Content</h5>
-        <p class="orange-text">You can use rows and columns here to organize your footer content.</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="orange-text">Links</h5>
-        <ul>
-          <li><a class="orange-text" href="#!">Link 1</a></li>
-          <li><a class="orange-text" href="#!">Link 2</a></li>
-          <li><a class="orange-text" href="#!">Link 3</a></li>
-          <li><a class="orange-text" href="#!">Link 4</a></li>
+    <div id="header" class="nav-wrapper">
+      <div class="container">
+        <a href="#!" class="brand-logo">Matt In The Hatt</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile<a></li>
         </ul>
       </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container orange-text">
-    © 2014 Copyright Text
-    <a class="orange-text right" href="#!">More Links</a>
+  </nav>
+  <main>
+    <div class="parallax-container">
+      <div class="parallax"><img src="../images/mattPromo.jpg"></div>
     </div>
-  </div>
-</footer>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });
-</script>
+    <div class="card-panel grey lighten-5 no-margin-top">
+      <div class="card-panel grey lighten-5 no-margin-top">
+        <h5 class="red-text center">Upcoming Events</h5>
+      </div>
+      <div class="row">
+      <div class="col m4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img  class="activator card-img" src="../images/promopic.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col m4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator card-img" src="../images/promopic1.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col m4">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator card-img" src="../images/promopic2.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="card-panel grey lighten-5 no-margin-top">
+        <h5 class="red-text center">Latest Tracks</h5>
+      </div>
+      <div class="container" id="sound">
+        
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer class="page-footer blue-grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

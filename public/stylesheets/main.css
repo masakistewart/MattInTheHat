@@ -1,29 +1,77 @@
-body {
+ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
   }
 
-#main {
-  flex: 1 0 auto;
+main {
+	flex: 1 0 auto;
+}
+
+nav {
+	background: rgba(0, 0, 0, .01);
+	z-index: -100px;
+}
+
+nav ul a {
+	color: #5A5A5A;
+}
+
+nav .brand-logo, nav a{
+	color: #5A5A5A;
+}
+
+.no-margin-top {
+	margin-top: 0;
+	border-radius: 0;
+}
+
+
+#tagline {
+	margin-left: 100%;
+}
+
+.card-img {
+	max-height: 340px;
+}
+
+
+
+div#heroTop {
+	height:600px;
+	width: 100%;
+	background-size: cover
 }
 
 img {
 	width: 100%;
 }
-footer.page-footer {
-	margin-top: 0;
-	padding-top: 0;
+
+#logo {
+	height: 50px;
 }
 
-.parallax img {
-	box-sizing: all;
+.flexy {
+	height: 100%;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+
+#heroTop {
+  background: url(../images/bottomPic.jpg);
 }
 
-a.brand-logo {
-	font-family: 'Pinyon Script', cursive;
+#heroTop2 {
+  background: url(../images/bottomPic.jpg);
 }
-/*.container {
-	margin-left: 10%;
-	margin-right: 10%;
-}*/
+
+.promoPic {
+	height: 100px;
+}
+
+.divider {
+	background: black;
+	height: 30px;
+	width: 100%;
+}
