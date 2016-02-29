@@ -3,6 +3,7 @@
 <head>
 <title>$ShowCase$</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
 
@@ -17,23 +18,46 @@
 <nav>
     <div id="header" class="nav-wrapper">
       <div class="container">
-        <a href="#!" class="brand-logo">Matt In The Hatt</a>
+        <a href="#!" class="brand-logo thin">Matt In The Hatt</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
+          <li><a class="modal-trigger" href="#modal1">Contact</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile<a></li>
+          <li><a class="modal-trigger" href="#modal1">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="../images/promopic.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <h1>Contact Info</h1>
+              <span class="black-text">
+                <ul>
+                  <li><a class="waves-effect orange waves-light btn" href="mailto:mattmeyer5793@hotmail.com?subject=Booking">mattmeyer5793@hotmail.com</a></li>
+                  <br>
+                  <li><a class="waves-effect orange waves-light btn" href="https://www.facebook.com/DJmattinthehat/?fref=ts" title=""><i class="fa fa-facebook"></i> facebook</a></li>
+                  <li></li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
   <main>
     <div class="parallax-container">
       <div class="parallax"><img src="../images/mattPromo.jpg"></div>
@@ -41,60 +65,69 @@
 
     <div class="card-panel grey lighten-5 no-margin-top">
       <div class="card-panel grey lighten-5 no-margin-top">
-        <h5 class="red-text center">Upcoming Events</h5>
+        <h5 class="red-text center thin">Upcoming Events</h5>
       </div>
       <div class="row">
-      <div class="col m4">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img  class="activator card-img" src="../images/promopic.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col m4">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator card-img" src="../images/promopic1.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        <div class="col m4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img  class="activator card-img" src="../images/promopic.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col m4">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator card-img" src="../images/promopic2.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        <div class="col m4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator card-img" src="../images/promopic1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="col m4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator card-img" src="../images/promopic2.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
     </div>
+
       <div class="card-panel grey lighten-5 no-margin-top">
-        <h5 class="red-text center">Latest Tracks</h5>
+        <h5 class="red-text center thin">Latest Tracks</h5>
       </div>
-      <div class="container" id="sound">
-        
+      <!-- <div class="container"> -->
+      <div class="row">
+        <div class="col s10">
+          <div class="card-panel" id="soundCloudTarget"></div>
+        </div>
+        <div class="col s2">
+          <div class="card-panel">
+            <div class="fb-page" data-href="https://www.facebook.com/DJmattinthehat" data-tabs="timeline" data-width="100%" height="401" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -106,7 +139,9 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <div class="card-panel white">
+            <div class="fb-follow white-text" data-href="https://www.facebook.com/DJmattinthehat/" data-layout="standard" data-show-faces="true"></div>
+          </div>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
